@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>challenge 3</title>
+	<link type="text/css" href="styles/style.css" rel="stylesheet" />
+	<script type="text/javascript" src="scripts/main.js" defer></script>	
+</head>
+<body>
+	<div class="grid-container">
+		<header class="grid-item header">
+			<h1>Space X</h1>
+			<p>Vul een plaats in om te kijken of het veilig is om te landen. Als de temperatuur, weersverwachting en de plaats heeft genoeg ruimte, kan het schip landen. </p>
+		</header>
+		<section class="grid-item city">
+			<input type="text" id="city">
+			<input type="button" id="city-button" value="Zoek een locatie om te landen">
+		</section>
+		<section class="grid-item degree">
+			<h3>Temperatuur</h3>
+			<section id="degree" class="layout-section"></section>
+		</section>
+		<section class="grid-item weather">
+			<h3>Weersverwachting</h3>
+			<section id="weather" class="layout-section"></section>
+		</section>
+		<section class="grid-item freeSpace">
+			<h3>Ruimte om te landen</h3>
+			<section id="freeSpace" class="layout-section"></section>
+		</section>
+		<aside id="text" class="grid-item aside">
+			<p>Het is veilig om te landen! Ga snel langs de terassen om weer te genieten van het Aardse leven.</p>
+		</aside>
+	</div>
+</body>
+</html>
