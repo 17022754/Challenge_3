@@ -11,17 +11,17 @@
 html, body{
 	font-family: 'Poppins', sans-serif;
 	font-size: 16px; /* 1rem = 16px */
-	color: rgb(25,25,112);
+	color: rgb(39,16,14)/*rgb(25,25,112)*/;
 	height: 100%;
 }
 
 body{
-	background-image: url('../images/background.jpg');
+	background-image: url('../images/background.png');
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-attachment: fixed;
 	background-size: cover;
-	background-color: rgb(112,128,144); /*if the background-image isn't working this color will show*/
+	background-color: rgb(254,182,98); /*if the background-image isn't working this color will show*/
 }
 
 /*style for the different headings on the website*/
@@ -39,7 +39,7 @@ h1 {
 	letter-spacing: 0.3rem; /* 8px */
 	font-weight: 700;
 	margin: 0.3rem;  /*(5*1/16) = 0.3125 staat voor 5px*/
-	color: rgb(230,230,250);
+	color: rgb(193,87,76);
 }
 
 h2 {
@@ -56,7 +56,7 @@ h3{
 }
 
 p {
-	width: 95vw;
+	width: 95%;
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -64,30 +64,63 @@ p {
 /*layout of the search bar*/
 
 #city{
-	display: flex;
-	width: 95vw;
-	min-height: 2rem;
+	display: block;
+/*	width: 95%;*/
+	min-height: 3rem;
 	border-radius: 0.3rem;
 	margin: 1rem auto;
+	padding: 1rem;
+}
+
+input[type="text"], input[type="button"], textarea {
+ 	background-color: rgb(255,255,255); 
+ 	border: none;
+ 	font-family: 'Open Sans', sans-serif;
+ 	color: rgb(193,87,76);
+ 	text-align: center;
+ 	font-size: 1rem;
+
+}
+
+input[type="button"] {
+	background-color: rgb(193,87,76);
+	color: rgb(255,255,255);
+	font-size: 0.875rem;
 }
 
 #city-button{
 	display: block;
-	width: 80vw;
-	padding: 0.3rem;
+/*	width: 80%;*/
+	padding: 0.5rem;
 	margin: 1rem auto;
+	border-radius: 0.3rem;
+}
+
+#city:focus {
+	outline: none;
+}
+
+#city-button:focus {
+	outline: none;
 }
 
 /*layout of the section with the information from the api's*/
 
 .layout-section{
-	display: block;
-	width: 95vw;
-	min-height: 2rem;
+	width: 95%;
+	min-height: 3rem;
 	border-radius: 0.3rem;
-	margin: 1rem auto;
-	background-color: rgb(255, 255, 255);
+	margin: 0.1rem auto 1rem auto;
+	background-color: rgb(255,255,255);
 	text-align: center;
-	padding: 0.3rem;
+	padding: 1rem;
+	font-family: 'Orbitron', sans-serif;
+	color: rgb(193,87,76);
 }
 
+/*layout of the map*/
+#map{
+	width: 100vw;
+	height: 100vh;
+	/*margin: 3rem;*/
+}
