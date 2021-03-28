@@ -120,7 +120,8 @@ input[type="button"] {
 
 /*layout of the map*/
 #map{
-	width: 100vw;
-	height: 100vh;
-	/*margin: 3rem;*/
+	max-width: 600px;
+	height: auto;
+	margin: 3rem;
+	padding: 3rem;
 }
