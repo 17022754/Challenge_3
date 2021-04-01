@@ -61,6 +61,10 @@ p {
 	margin-left: auto;
 }
 
+#text{
+	color: rgb(255,255,255);
+}
+
 /*layout of the search bar*/
 
 #city{
@@ -120,8 +124,8 @@ input[type="button"] {
 
 /*layout of the map*/
 #map{
-	max-width: 600px;
-	height: auto;
-	margin: 3rem;
-	padding: 3rem;
+	max-width: 90%;
+    height: 90%;
+    margin: auto;
+    padding: 7rem;
 }

@@ -21,23 +21,21 @@ function getData() {
 		var weather = document.getElementById('weather');
 		weather.innerHTML = response.liveweer[0].verw;
 
-		var freeSpace = document.getElementById('map');
-		map.innerHTML = loadMap(response);
+		loadMap(response);
 	});
 }
 
 function loadMap(response){
 	// Initialate map
 var worldMap = new mapboxgl.Map({
-  container: 'map',
-  style: 'mapbox://styles/mapbox/streets-v11',
+	container: 'map',
+	style: 'mapbox://styles/mapbox/streets-v11',
 
   // Positioning the map on a certain longitute + latitude and zooming in
-  center: [-79.4512, 43.6568],
-  zoom: 13,
-});
-
-// console.log(loadMap);}
+	center: [-79.4512, 43.6568],
+	zoom: 13,
+	});
+};
 
 document.getElementById('city-button').onclick = function(){
 	// init data stream
