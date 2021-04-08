@@ -4,78 +4,36 @@
 	grid-area: header;
 }
 
-.city{
+.city-button{
 	grid-area: city;
-	place-self:center;
-}
-
-.degree{
-	grid-area: degree;
+	place-self: center;
 }
 
 .weather{
 	grid-area: weather;
+	place-self: center;
 }
 
-.freeSpace{
-	grid-area: freeSpace;
+.landingsPoint{
+	grid-area: landingsPoint;
+	place-self: center;
 }
 
-.aside{
-	grid-area: aside;
-	place-self:center;
+.globalMap{
+	grid-area: globalMap;
+	place-self: center;
 }
 
 .grid-container{
 	display: grid;
 	grid-template-columns: 100%;
-	grid-template-rows: auto /*25% 20% 10% 10% 10% 25%*/;
+	grid-template-rows: auto;
 	justify-content: center;
 	grid-template-areas: 
 	"header"
 	"city"
-	"degree"
 	"weather"
-	"freeSpace"
-	"aside";
+	"landingsPoint"
+	"globalMap";
 	grid-gap: 1rem;
-}
-
-/*layout tablet version with grid-container*/
-@media only screen and (min-width: 768px) {
-	.grid-container{
-		grid-template-columns: 50% 50%;
-		grid-template-rows: 15% 30% 15% 15% 25%; 
-		grid-template-areas: 
-		"header header"
-		"city city"
-		"degree weather"
-		"freeSpace freeSpace"
-		"aside aside";
-}
-
-/*layout laptop version with grid-container*/
-@media only screen and (min-width: 1024px){
-	.grid-container{
-		grid-template-columns: 50% 50%;
-		grid-template-rows: 15% 30% 15% 15% 25%; 
-		grid-template-areas: 
-		"header header"
-		"city city"
-		"degree freeSpace"
-		"weather freeSpace"
-		"aside aside";
-}
-
-/*layout desktop version with grid-container*/
-@media only screen and (min-width: 1280px){
-		.grid-container{
-		grid-template-columns: 50% 50%;
-		grid-template-rows: 15% 20% 40% 10% 15%; 
-		grid-template-areas: 
-		"header header"
-		"city city"
-		"freeSpace freeSpace"
-		"degree weather"
-		"aside aside";
-}
+} 
